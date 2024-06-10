@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- fuente de letra -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <!-- fuente de letra -->
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div>
+                <img src="https://logos-world.net/wp-content/uploads/2022/01/Rick-And-Morty-Logo.png" alt="Logo Rick y Morty">
+            </div>
+            <button id="btn-todos">Ver todos</button>
+            <input id="buscador" type="text" placeholder="nombre">
+            <button id="btn-buscar">Buscar personaje</button>
+        </nav>
+    </header>
+    <div id="todos">
+        <div class="personaje-todos" id="lista-personaje">
+            <!-- <div class="tarjeta-personaje">
+                <p class="personaje-id-back">#02</p>
+                <div class="personaje-img">
+                    <img src="https://rickandmortyapi.com/api/character/avatar/2.jpeg" alt="">
+                </div>
+                <div class="personaje-info">
+                    <div class="nombre-contenedor">
+                        <p id="personaje-id">#02</p>
+                        <h3 id="nombre-personaje">Morty</h3>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <section class="modal" id="modal">
+        <div class="modal-personaje">
+            <button id="btn-cerrar">X</button>
+            <div class="contenedor-id">
+                <p class="personaje-id" id="id-modal">#02</p>
+                <h3 class="nombre-char" id="nombre-modal">Morty</h3>
+            </div>
+            <div class="img-modal">
+                <img id="img-modal" src="https://rickandmortyapi.com/api/character/avatar/2.jpeg" alt="">
+            </div>
+            <div class="info-personaje">
+                <p>Especie: <span id="especie">Humano</span></p>
+                <p>Género: <span id="genero">Hombre</span></p>
+                <p>Estatus: <span id="estatus">Vivo</span></p>
+                <p>Locación: <span id="locacion">Locacion</span></p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
